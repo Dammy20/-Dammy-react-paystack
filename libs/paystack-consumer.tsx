@@ -1,6 +1,6 @@
 import React, {forwardRef, useContext, FunctionComponentElement} from 'react';
 import PaystackProvider from './paystack-provider';
-import {PaystackProps} from './types';
+import {PaystackProps} from './interfaces';
 import PaystackContext from './paystack-context';
 
 interface PaystackConsumerProps extends PaystackProps {

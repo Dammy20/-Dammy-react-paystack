@@ -1,6 +1,6 @@
-export type Currency = 'NGN' | 'GHS' | 'USD' | 'ZAR' | 'KES' | 'XOF';
+export interface Currency = 'NGN' | 'GHS' | 'USD' | 'ZAR' | 'KES' | 'XOF';
 
-export type PaymentChannels =
+export interface PaymentChannels =
   | 'bank'
   | 'card'
   | 'qr'
@@ -10,9 +10,9 @@ export type PaymentChannels =
   | 'bank_transfer'
   | 'payattitude';
 
-type Bearer = 'account' | 'subaccount';
+interface Bearer = 'account' | 'subaccount';
 
-type phone = number | string;
+interface phone = number | string;
 
 interface PaystackCustomFields {
   display_name: string;
@@ -28,7 +28,7 @@ interface PaystackMetadata {
   [key: string]: any;
 }
 
-export type callback = (response?: any) => void;
+export interface callback = (response?: any) => void;
 
 export interface PaystackProps {
   publicKey: string;
@@ -52,11 +52,11 @@ export interface PaystackProps {
   split?: Record<string, any>;
 }
 
-export type InitializePayment = (options: {
+export interface InitializePayment = (options: {
   onSuccess?: callback;
   onClose?: callback;
   config?: Omit<PaystackProps, 'publicKey'>;
 }) => void;
 
-export type HookConfig = Omit<Partial<PaystackProps>, 'publicKey'> &
+export interface HookConfig = Omit<Partial<PaystackProps>, 'publicKey'> &
   Pick<PaystackProps, 'publicKey'>;

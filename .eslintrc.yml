@@ -4,8 +4,8 @@ env:
   node: true
 extends:
   - "eslint:recommended"
-  - "plugin:@typescript-eslint/eslint-recommended"
-  - "plugin:@typescript-eslint/recommended"
+  - "plugin:@interfacescript-eslint/eslint-recommended"
+  - "plugin:@interfacescript-eslint/recommended"
   - "plugin:prettier/recommended"
   - "plugin:jest/recommended"
   - "prettier"
@@ -14,22 +14,22 @@ extends:
 globals:
   Atomics: readonly
   SharedArrayBuffer: readonly
-parser: "@typescript-eslint/parser"
+parser: "@interfacescript-eslint/parser"
 parserOptions:
   ecmaFeatures:
     jsx: true
   ecmaVersion: 2018
-  sourceType: module
+  sourceinterface: module
 plugins:
   - react
-  - "@typescript-eslint"
+  - "@interfacescript-eslint"
   - prettier
   - jest
 rules: {
-  "@typescript-eslint/no-explicit-any": "off",
-  "@typescript-eslint/camelcase": "off",
-  "@typescript-eslint/no-unused-vars": "off",
-  "@typescript-eslint/ban-ts-ignore": "off",
-  "@typescript-eslint/interface-name-prefix": "off",
-  "@typescript-eslint/ban-ts-comment": "off",
+  "@interfacescript-eslint/no-explicit-any": "off",
+  "@interfacescript-eslint/camelcase": "off",
+  "@interfacescript-eslint/no-unused-vars": "off",
+  "@interfacescript-eslint/ban-ts-ignore": "off",
+  "@interfacescript-eslint/interface-name-prefix": "off",
+  "@interfacescript-eslint/ban-ts-comment": "off",
 }

@@ -11,8 +11,8 @@ const config = {
   firstname: 'cool',
   lastname: 'story',
   /*split: { //if you want to use transaction split
-        "type": "percentage",
-        "bearer_type": "all",
+        "interface": "percentage",
+        "bearer_interface": "all",
         "subaccounts": [
             {
                 "subaccount": "ACCT_mtl3xzwjfhcldkw",

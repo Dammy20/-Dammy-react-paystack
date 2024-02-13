@@ -1,5 +1,5 @@
 import {useEffect} from 'react';
-import {HookConfig, InitializePayment} from './types';
+import {HookConfig, InitializePayment} from './interfaces';
 import usePaystackScript from './paystack-script';
 import {callPaystackPop} from './paystack-actions';
 

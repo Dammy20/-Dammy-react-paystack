@@ -1,5 +1,5 @@
-/// <reference types="react" />
-import { callback, PaystackProps } from './types';
+/// <reference interfaces="react" />
+import { callback, PaystackProps } from './interfaces';
 interface PaystackProviderProps extends PaystackProps {
     children: JSX.Element;
     onSuccess: callback;

@@ -1,6 +1,6 @@
 /// <reference types="react" />
 import { callback, PaystackProps } from './types';
-interface PaystackProviderProps extends PaystackProps {
+type PaystackProviderProps = PaystackProps & {
     children: JSX.Element;
     onSuccess: callback;
     onClose: callback;

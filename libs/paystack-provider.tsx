@@ -1,7 +1,7 @@
 import React from 'react';
 import PaystackContext from './paystack-context';
 import usePaystackPayment from './use-paystack';
-import {callback, PaystackProps} from './types';
+import {callback, PaystackProps} from './interfaces';
 
 interface PaystackProviderProps extends PaystackProps {
   children: JSX.Element;

@@ -6,7 +6,7 @@ import usePaystackPayment from '../use-paystack';
 import {callPaystackPop} from '../paystack-actions';
 import usePaystackScript from '../paystack-script';
 import {config} from './fixtures';
-import {Currency, PaymentChannels} from '../types';
+import {Currency, PaymentChannels} from '../interfaces';
 
 jest.mock('../paystack-actions');
 const onSuccess = jest.fn();
@@ -73,8 +73,8 @@ describe('usePaystackPayment()', () => {
         lastname: 'err',
         phone: '080456789012',
         split: {
-          type: 'percentage',
-          bearer_type: 'all-proportional',
+          interface: 'percentage',
+          bearer_interface: 'all-proportional',
           subaccounts: [
             {
               subaccount: 'ACCT_hhs519xgrbocdtr',
@@ -123,8 +123,8 @@ describe('usePaystackPayment()', () => {
       lastname: 'err',
       phone: '080456789012',
       split: {
-        type: 'percentage',
-        bearer_type: 'all-proportional',
+        interface: 'percentage',
+        bearer_interface: 'all-proportional',
         subaccounts: [
           {
             subaccount: 'ACCT_hhs519xgrbocdtr',

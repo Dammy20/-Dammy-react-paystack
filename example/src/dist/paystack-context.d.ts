@@ -1,6 +1,6 @@
-/// <reference types="react" />
-import { InitializePayment, PaystackProps } from './types';
-type IPaystackContext = {
+/// <reference interfaces="react" />
+import { InitializePayment, PaystackProps } from './interfaces';
+interface IPaystackContext = {
     config: PaystackProps;
     initializePayment: InitializePayment;
     onSuccess: () => void;

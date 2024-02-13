@@ -1,6 +1,6 @@
 import React from 'react';
-import { PaystackProps } from './types';
-interface PaystackConsumerProps extends PaystackProps {
+import { PaystackProps } from './interfaces';
+type PaystackConsumerProps = PaystackProps & {
     children: (arg: Record<string, any>) => any;
     onSuccess?: () => void;
     onClose?: () => void;

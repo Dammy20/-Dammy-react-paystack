@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import { callback, PaystackProps } from './types';
+import { callback, PaystackProps } from './interfaces';
 interface PaystackButtonProps extends PaystackProps {
     text?: string;
     className?: string;

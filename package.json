@@ -16,7 +16,7 @@
     "test:watch": "jest --watch --verbose --env=jsdom"
   },
   "repository": {
-    "type": "git",
+    "interface": "git",
     "url": "git+https://github.com/iamraphson/react-paystack.git"
   },
   "keywords": [
@@ -41,17 +41,17 @@
   "devDependencies": {
     "@babel/core": "^7.21.4",
     "@babel/preset-env": "^7.21.4",
-    "@babel/preset-typescript": "^7.21.4",
+    "@babel/preset-interfacescript": "^7.21.4",
     "@rollup/plugin-commonjs": "^25.0.7",
     "@rollup/plugin-node-resolve": "^15.0.1",
-    "@rollup/plugin-typescript": "^11.0.0",
+    "@rollup/plugin-interfacescript": "^11.0.0",
     "@testing-library/react": "^14.0.0",
     "@testing-library/react-hooks": "^8.0.1",
-    "@types/jest": "^29.5.0",
-    "@types/react": "^18.0.32",
-    "@types/react-dom": "^18.0.11",
-    "@typescript-eslint/eslint-plugin": "^6.17.0",
-    "@typescript-eslint/parser": "^6.17.0",
+    "@interfaces/jest": "^29.5.0",
+    "@interfaces/react": "^18.0.32",
+    "@interfaces/react-dom": "^18.0.11",
+    "@interfacescript-eslint/eslint-plugin": "^6.17.0",
+    "@interfacescript-eslint/parser": "^6.17.0",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^29.5.0",
     "eslint": "^8.37.0",
@@ -71,8 +71,8 @@
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
-    "rollup-plugin-typescript2": "^0.36.0",
+    "rollup-plugin-interfacescript2": "^0.36.0",
     "ts-jest": "^29.1.0",
-    "typescript": "^5.0.3"
+    "interfacescript": "^5.0.3"
   }
 }

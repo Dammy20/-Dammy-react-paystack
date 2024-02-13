@@ -1,5 +1,5 @@
 import React from 'react';
-import { PaystackProps } from './types';
+import { PaystackProps } from './interfaces';
 interface PaystackConsumerProps extends PaystackProps {
     children: (arg: Record<string, any>) => any;
     onSuccess?: () => void;

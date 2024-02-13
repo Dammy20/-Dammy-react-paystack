@@ -1,7 +1,7 @@
 import {createContext} from 'react';
-import {InitializePayment, PaystackProps} from './types';
+import {InitializePayment, PaystackProps} from './interfaces';
 
-type IPaystackContext = {
+interface IPaystackContext = {
   config: PaystackProps;
   initializePayment: InitializePayment;
   onSuccess: () => void;
